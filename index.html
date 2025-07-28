@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Information Form</title>
+</head>
+<body>
+
+  <h1>Student Information Form</h1>
+
+  <!-- Form Starts -->
+  <form action="#" method="post" enctype="multipart/form-data">
+
+    <!-- Section 1: Personal Information -->
+    <fieldset>
+      <legend>1. Personal Information</legend>
+
+      <label>First Name:</label>
+      <input type="text" name="firstName" required><br><br>
+
+      <label>Last Name:</label>
+      <input type="text" name="lastName" required><br><br>
+
+      <label>Date of Birth:</label>
+      <input type="date" name="dob" required><br><br>
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="male" required> Male
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="other"> Other<br><br>
+
+      <label>Email Address:</label>
+      <input type="email" name="email" required><br><br>
+
+      <label>Mobile Number:</label>
+      <input type="tel" name="mobile" required><br><br>
+
+      <label>Favorite Color:</label>
+      <input type="color" name="favColor"><br><br>
+    </fieldset>
+
+    <!-- Section 2: Academic Information -->
+    <fieldset>
+      <legend>2. Academic Information</legend>
+
+      <label>Roll Number:</label>
+      <input type="number" name="rollNumber" required><br><br>
+
+      <label>Year of Admission:</label>
+      <input type="number" name="admissionYear" required><br><br>
+
+      <label>Course / Branch:</label>
+      <select name="course" required>
+        <option value="">-- Select --</option>
+        <option value="CSE">CSE</option>
+        <option value="IT">IT</option>
+        <option value="ECE">ECE</option>
+        <option value="ME">ME</option>
+        <option value="EEE">EEE</option>
+      </select><br><br>
+
+      <label>Rate Your Coding Skills (0–10):</label>
+      <input type="range" name="codingSkill" min="0" max="10"><br><br>
+
+      <label>Preferred Lab Time:</label>
+      <input type="time" name="labTime"><br><br>
+
+      <label>Graduation Month:</label>
+      <input type="month" name="gradMonth"><br><br>
+    </fieldset>
+
+    <!-- Section 3: Document Upload -->
+    <fieldset>
+      <legend>3. Documents Upload</legend>
+
+      <label>Passport Size Photo:</label>
+      <input type="file" name="photo" accept="image/*"><br><br>
+
+      <label>Upload Marksheet or ID Proof:</label>
+      <input type="file" name="document"><br><br>
+    </fieldset>
+
+    <!-- Section 4: Additional Info -->
+    <fieldset>
+      <legend>4. Additional Info</legend>
+
+      <label>Personal Website / LinkedIn:</label>
+      <input type="url" name="website"><br><br>
+
+      <label>Bio / About You:</label><br>
+      <textarea name="bio" rows="4" cols="50"></textarea><br><br>
+
+      <!-- Hidden Field -->
+      <input type="hidden" name="studentID" value="12345">
+
+      <input type="checkbox" name="terms" required>
+      I accept the Terms & Conditions<br><br>
+    </fieldset>
+
+    <!-- Section 5: Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+  </form>
+  <!-- Form Ends -->
+
+</body>
+</html>
